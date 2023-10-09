@@ -1,6 +1,6 @@
 # golang-principios-basicos 🚀
 
-Bem-vindo ao `golang-principios-basicos`! Este repositório foi criado para servir como uma referência para todos que desejam aprender ou revisitar os conceitos fundamentais da linguagem **Go**.
+Bem-vindo ao `golang-fundamentos`! Este repositório foi criado para servir como uma referência para todos que desejam aprender ou revisitar os conceitos fundamentais da linguagem **Go**.
 
 ## 📘 Conteúdo
 
