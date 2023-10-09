@@ -33,11 +33,14 @@ func main() {
 	// If init
 	// if init; condition {}
 	// A variavel declarada no init só existe dentro do escopo do if
+	// Útil para inicializar variáveis perante uma condicional
 	if outroNumero := numero; outroNumero > 0 {
 		fmt.Println("Numero é maior que zero")
 
 		fmt.Println(outroNumero)
 	} else {
+		outroNumero := 0
+		fmt.Println(outroNumero)
 		fmt.Println("Numero é menor que zero")
 	}
 
