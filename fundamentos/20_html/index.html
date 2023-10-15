@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset básico */
+        body, h1, h3, button {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.05rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-5 {
+            margin-top: 3rem;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        .alert {
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+            transform: translateY(0);
+            transition: transform 0.3s;
+        }
+
+        .alert-primary {
+            color: #004085;
+            background-color: #cce5ff;
+            border-color: #b8daff;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Animação para o alerta */
+        .alert:hover {
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="display-4 text-center">Home</h1>
+        
+        <div class="alert alert-primary mt-4">
+            <h3 class="text-center">Seja bem-vindo {{.Nome}}!</h3>
+        </div>
+
+        <div class="text-center mt-4">
+            <button id="button1">Clique</button>
+        </div>
+    </div>
+
+    <script>
+        const button1 = document.querySelector('#button1');
+        button1.addEventListener('click', () => {
+            alert('Clicou no botão 1');
+        });
+    </script>
+</body>
+
+</html>
